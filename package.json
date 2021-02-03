@@ -1,0 +1,25 @@
+{
+  "name": "enginegroup",
+  "version": "1.0.0",
+  "description": "Take Home Test",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hajimurtaza/EngineGroup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hajimurtaza/EngineGroup/issues"
+  },
+  "homepage": "https://github.com/hajimurtaza/EngineGroup#readme"
+}
