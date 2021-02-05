@@ -1,0 +1,16 @@
+1. FIll "=" sign
+2. we know from question, one more position.
+3. 2 positions remain with 2 signs, so 4 combinations possible
+4. >>>,<<<, ><<, <>>
+5. Use the Letter with "=" sign as starting point and fill its positions
+6. Go to D and complete its 2 positions by taking inverse of signs from letter not containing "="
+THen fill the remaining 2 letters with the other 2 possibilites
+
+
+
+New rules:
+1. Letter with = sign is filled with inverse or all others. 
+2. There is always 2 > and 1 <.
+3. < is always filled with same values. 
+4. Other letter whose sign is in same position as = in the inital letter , the answer for that is inverse of remainiing values
+5. final letter is filled by the last possibility
