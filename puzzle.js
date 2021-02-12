@@ -82,7 +82,7 @@ var  canBeBackward = function(row){
 	for(let i = 0; i< row.length; i++){
   	if(row[i] === '>')
     	return false;
-     
+      
   }
    
   return true;
