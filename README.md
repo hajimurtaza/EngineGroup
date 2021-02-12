@@ -15,8 +15,10 @@ Take Home Test
     Decyphered rules/patterns present in the question and answer.
     Out of 4 blanks, 1 blank was provided in the question.
     Second was always = in every letter in ascending order
-    For the other 2 blanks, these were the theories considered,
+    For the other 2 blanks, these were the theories considered:
+
     a. The letter with equal sign always has the values in inverted format of the existing ones.
+
     b. There is always one >>> , <<< and either ><< or <>>
 
 The idea was to create a matrix and solve each line using all these rules. 
