@@ -9,7 +9,7 @@ const response_dict = {
   'Ping': 'OK',
   'Source': 'https://github.com/hajimurtaza/EngineGroup',
   'Email Address': 'murtazahaji2@gmail.com',
-  'Referrer': 'Andrew',
+  'Referrer': 'Andrew Rogers',
   'Phone': '9789302923',
   'Name': 'Murtaza Haji',
   'Resume': 'https://my-profile-docs.s3.amazonaws.com/cover_letter.docx\n https://my-profile-docs.s3.amazonaws.com/Murtaza_Haji_SE.docx',
@@ -19,27 +19,11 @@ const response_dict = {
   'Status': 'Yes'
 }
 
-// var answer = function(answer){
-//   return console.log( `ABCD
-//     A=<><
-//     B>=><
-//     C<<=<
-//     D>>>=)`
-// };
-
 app.get('/', (req, res) => { 
 
-  // counter++;
-  // console.log(counter)
-  //  let queries = []
    console.log(req.query.q)
-
-
-  // console.log(queries)
    
     const { httpVersion, method, url } = req;
-    // console.log(url)
-
 
     console.log(
     JSON.stringify({
@@ -60,7 +44,6 @@ app.get('/', (req, res) => {
   
 })
 
-   
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}...`);
 });

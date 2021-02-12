@@ -1,7 +1,3 @@
-// var inputString = "ABCD A---< B-->- C---> D---="
-// .split(' ');
-// console.log(output);
-
 var solution = function(inputString){
     let parsedInput = parser(inputString);
     let parsedOuput = fillEqualSign(parsedInput)
@@ -93,9 +89,7 @@ var unparse = function (matrix){
     var outputString = ' ABCD\n';
     
     for (let row = 0; row < matrix.length;row++){
-        //console.log(matrix[row]);
         var text = letters[row] + matrix[row].join('') + '\n';
-       // var text = matrix[row].join('');
         outputString = outputString + text;
         
     }
