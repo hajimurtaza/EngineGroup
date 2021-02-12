@@ -84,7 +84,7 @@ var  canBeBackward = function(row){
     	return false;
     
   }
-  
+   
   return true;
 }
 var letters = ['A', 'B' , 'C', 'D'];
