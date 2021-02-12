@@ -1,8 +1,10 @@
 const express = require('express');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+var puzzle = require('./puzzle');
 const PORT = 8080;
 const app = express();
-let counter = 0
+
+
 const response_dict = {
   'Ping': 'OK',
   'Source': 'Sourcecode download link',
@@ -12,15 +14,18 @@ const response_dict = {
   'Name': 'Murtaza Haji',
   'Resume': 'Resume and cover letter download link',
   'Years': '2.5',
-  'Puzzle': ` ABCD
-A=<><
-B>=><
-C<<=<
-D>>>=`,
   'Degree': 'Master in Information Systems',
   'Position': 'Software Engineer',
   'Status': 'Yes'
 }
+
+// var answer = function(answer){
+//   return console.log( `ABCD
+//     A=<><
+//     B>=><
+//     C<<=<
+//     D>>>=)`
+// };
 
 app.get('/', (req, res) => { 
 
@@ -45,7 +50,14 @@ app.get('/', (req, res) => {
     })
   );
     
-  res.send(response_dict[req.query.q]);
+  if (req.query.q == 'Puzzle'){
+    var puzzleString = req.query.d.substring(26).replace(/\r?\n|\r/g, ' ').trim();
+    res.send(puzzle.solution(puzzleString));
+  }
+  else{
+    res.send(response_dict[req.query.q]);
+  }
+  
 })
 
 
