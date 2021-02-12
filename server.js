@@ -7,12 +7,12 @@ const app = express();
 
 const response_dict = {
   'Ping': 'OK',
-  'Source': 'Sourcecode download link',
+  'Source': 'https://github.com/hajimurtaza/EngineGroup',
   'Email Address': 'murtazahaji2@gmail.com',
   'Referrer': 'Andrew',
   'Phone': '9789302923',
   'Name': 'Murtaza Haji',
-  'Resume': 'Resume and cover letter download link',
+  'Resume': 'https://my-profile-docs.s3.amazonaws.com/cover_letter.docx\n https://my-profile-docs.s3.amazonaws.com/Murtaza_Haji_SE.docx',
   'Years': '2.5',
   'Degree': 'Master in Information Systems',
   'Position': 'Software Engineer',
