@@ -4,6 +4,8 @@
   "description": "Take Home Test",
   "main": "server.js",
   "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
     "express": "^4.17.1",
     "request": "^2.88.2"
   },
