@@ -1,9 +1,9 @@
 #!/bin/bash
 cd enginegroup-webapp/
 
-pm2 stop server.js
+sudo pm2 stop server
 
-pm2 start server.js
+sudo pm2 start server.js
 
 
 echo 'pm2 started'
