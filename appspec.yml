@@ -2,16 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/enginegroup-webapp
-permissions:
-  - object: /home/ubuntu
-    owner: ubuntu
-    group: ubuntu
-    type:
-      - directory
-      - file
+    destination: /enginegroup-webapp
+
 hooks:
-  ApplicationStart:
-    - location: scripts/reload-pm2.sh
+  AfterInstall:
+    - location: scripts/after_install.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 300
+      runas: root
