@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/aws-codedeploy
+cd ~/enginegroup-webapp
 pm2 startOrReload ecosystem.config.js
