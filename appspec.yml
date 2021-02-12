@@ -5,6 +5,7 @@ files:
     destination: /enginegroup-webapp
 
 hooks:
+  
   AfterInstall:
     - location: scripts/after_install.sh
       timeout: 300
