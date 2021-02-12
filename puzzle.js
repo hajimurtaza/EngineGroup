@@ -16,7 +16,7 @@ var parser = function(inputString){
     let matrix = inputString.split(' ');
     //Remove initial alphabets
     matrix.splice(0,1);
-    console.log(matrix);
+    // console.log(matrix);
 
     matrix = matrix.map(x => x.substring(1).split(''));
     return matrix;
