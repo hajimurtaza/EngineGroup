@@ -36,7 +36,7 @@ jobs:
       matrix:
         python-version: [3.8]
         node-version: ['12.x']
-        appname: ['resume-app']
+        appname: ['enginegroup-codedeploy']
         deploy-group: ['staging']
         s3-bucket: ['enginegroup-deployment']
         s3-filename: ['enginegroup-webapp-${{ github.sha }}']
