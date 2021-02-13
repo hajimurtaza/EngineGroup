@@ -27,6 +27,7 @@ I also observed that the answer kind off behaves like a transpose, where the val
 Using this logic along with the rules, I was able to successfully solve the puzzle.
 
 To keep the app live, I deployed it on AWS EC2 instance and setup a CI/CD pipeline using Github Actions and AWS CodeDeploy.
+
 ![Screenshot](assests/action-deploy.png)
 
 
