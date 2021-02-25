@@ -1,5 +1,5 @@
 # EngineGroup
-Take Home Test
+Nodejs Application with CI/CD using Github Actions.
 
 # Steps followed:
 1. Setup Nodejs server to accept requests coming from the client.
